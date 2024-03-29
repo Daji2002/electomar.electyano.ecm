@@ -15,6 +15,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body{
+  background-color: #cccacac0;
+}
 
 /* BASIC SETUP */
 
@@ -272,7 +275,7 @@ main {
   color: #fff;
 }
 
-.info button {
+/* .info button {
   background: #40005e;
   border: none;
   outline: none;
@@ -284,7 +287,7 @@ main {
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
-}
+} */
 
 .who-we h2 {
   font-size: 22px;
@@ -357,13 +360,13 @@ main {
 
 .do img {
   max-width: 288px;
-  height: 250x;
+  height: 160px;
 }
 
 .do button {
   width: 100%;
-  max-width: 288px;
-  height: 50px;
+  max-width: 280px;
+  min-height: 50px;
   border-radius: 3px;
   background-color: #40005e;
   color: #fff;
@@ -824,6 +827,7 @@ footer ul {
 .ogh,
 .s {
   margin-bottom: 56px;
+  margin-left: 30px;
 }
 
 .suceess {
@@ -1020,7 +1024,27 @@ footer ul {
 .request img {
   max-width: 512px;
 }
-
+.fleq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fleq h3 {
+  color: #fff;
+}
+.media .chat {
+  background-color: #bdb3b3f8;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px #6d6c6c;
+  transition: 0.5s;
+}
+.media .chat:hover {
+  border: none;
+  box-shadow: none;
+}
+.span-contact{
+  color: #40005e;
+}
 @media only screen and (min-width: 700px) {
   /*home */
 
@@ -1153,7 +1177,7 @@ footer ul {
 
   .media {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     align-items: center;
@@ -1163,9 +1187,8 @@ footer ul {
     width: 100%;
     max-width: 380px;
     height: 250px;
-    margin-right: 30px;
+    margin: 20px;
     padding: 25px;
-
     border: 1px solid #40005e4d;
     box-sizing: border-box;
   }
@@ -1191,6 +1214,7 @@ footer ul {
   .chat ul {
     display: flex;
     flex-wrap: wrap;
+    margin: 5px;
   }
 
   .chat ul li {
@@ -1971,6 +1995,7 @@ form {
   .chat ul {
     display: flex;
     flex-wrap: wrap;
+    margin: 5px;
   }
 
   .chat ul li {
